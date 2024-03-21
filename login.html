@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <title>Login</title>
+</head>
+<body>   
+         <!-- Login page -->
+    <!-- header with logo -->
+    <header><a class="logo" href="index.html"><img src="images/logo.png" alt="Logo"></a></header>
+    <!-- top nav bar -->
+    <div class="topnav" id="topnav">
+        <a href="index.html" >Home</a>
+        <a href="menu.html" >Menu</a>
+        <a href="booking.html">Booking</a>
+        <a href="about.html">About</a>
+        <a href="login.html" class="active">Login</a>
+        <a href="javascript:void(0);" class="icon" onclick="topNav()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      <main>
+      <!-- page content -->
+      <div class="login">
+        <div class="container">
+            <input type="checkbox" id="check">        
+        <!-- Login form -->  
+        <div class="responsive-form login"><div></div>
+            <h1>Login</h1>
+             <!--e-mail  -->            
+            <form class="form-container">
+                <label for="email" 
+                class="form-container-label"> 
+               Email: 
+           </label> 
+         <input type="email"
+                id="email"
+                name="email" 
+                placeholder="Enter your email address" 
+                class="form-container-input"
+                required>
+            <!-- password -->
+                <label for="password" 
+                       class="form-container-label"> 
+                      Password: 
+                  </label> 
+                <input type="password" 
+                       id="password" 
+                       name="password" 
+                       placeholder="Enter your password"
+                       class="form-container-input" required min="3">
+  <!-- forgot password  -->
+                <label for="forgot" 
+                class="form-container-label"> 
+                <a class="forgot" href="#">Forgot password?</a>
+           </label>
+  <!-- login button -->      
+                <button type="submit" 
+                        class="form-container-button"> 
+                      Login 
+                  </button>                   
+            </form> 
+  <!-- Signup button -->
+            <div class="signup">
+                <span class="signup">Dont' have an account?
+                 <label for="check">Signup</label>
+                </span>
+              </div>            
+        </div> 
+  <!-- form Signup -->
+        <div class="responsive-form registration"><div></div>
+        <h1>Create account</h1> 
+  <!-- create password -->        
+        <form class="form-container"> 
+            <label for="password" 
+            class="form-container-label"> 
+           Create password: 
+       </label> 
+     <input type="password" 
+            id="password" 
+            name="password" 
+            placeholder="Enter your password"
+            class="form-container-input" required min="3">
+  <!--confirm password  -->
+  <label for="password" 
+  class="form-container-label"> 
+  Confirm password: 
+  </label> 
+  <input type="password" 
+  id="password" 
+  name="password" 
+  placeholder="Enter your password"
+  class="form-container-input" required min="3">
+            <button type="submit" 
+                    class="form-container-button"> 
+                  Create 
+              </button> 
+        </form> 
+        <div class="signup">
+            <span class="signup">Already have an account?
+             <label for="check">Login</label>
+            </span>
+          </div> 
+    </div> 
+  </div> 
+      </div>
+      
+    </main>
+     <!-- footer -->
+     <footer>
+        <div>
+            <a href="index.html"><img src="images/footer_logo.png" alt="Logo"></a>
+        </div><div><p> &copy; Copyright Little Lemon</p>            
+        </div> 
+    </footer>
+     <!-- script functions -->
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <title>Booking</title>
+</head>
+<body>   
+         <!-- Booking page -->
+    <!-- header with logo -->
+    <header><a class="logo" href="index.html"><img src="images/logo.png" alt="Logo"></a></header>
+    <!-- top nav bar -->
+    <div class="topnav" id="topnav">
+        <a href="index.html" >Home</a>
+        <a href="menu.html" >Menu</a>
+        <a href="booking.html" class="active">Booking</a>
+        <a href="about.html">About</a>
+        <a href="login.html">Login</a>
+        <a href="javascript:void(0);" class="icon" onclick="topNav()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      <main>
+      <!-- page content -->      
+        <!-- reservation form -->
+<div class="responsive-form reservation"><div></div>
+<h1>Make a reservation</h1> 
+<!-- first name -->
+<form class="form-container"> 
+    <label for="firstName" 
+            class="form-container-label"> 
+            Name: 
+        </label>         
+    <input type="text" 
+            id="firstName" 
+            name="firstName" 
+            placeholder="Enter your name"
+            class="form-container-input" required>
+<!-- booking e-mail -->                    
+    <label for="email" 
+            class="form-container-label"> 
+            Email: 
+        </label> 
+    <input type="email"
+            id="email"
+            name="email" 
+            placeholder="Enter your email address" 
+            class="form-container-input"
+            required>             
+<!-- booking date -->
+            <label for="date" 
+            class="form-container-label"> 
+            Date of Booking: 
+        </label> 
+    <input type="date"
+            id="date"
+            name="date"            
+            class="form-container-input"
+            required> 
+<!-- booking time -->
+            <label for="time" 
+            class="form-container-label"> 
+            Time of booking: 
+        </label> 
+        <select id="time" required="" class="form-container-input">
+            <option>14:00</option><option>14:30</option>
+            <option>15:00</option><option>15:30</option>
+            <option>16:00</option><option>16:30</option>
+            <option>17:00</option><option>17:30</option>
+            <option>18:00</option><option>18:30</option>
+            <option>19:00</option><option>19:30</option>
+            <option>20:00</option><option>20:30</option>
+            <option>21:00</option><option>21:30</option>                    
+        </select>
+<!-- number of peoples -->
+        <label for="number" 
+            class="form-container-label"> 
+            Number of booking: 
+        </label> 
+        <select id="number" required="" class="form-container-input">
+            <option>1</option><option>2</option>
+            <option>3</option><option>4</option>
+            <option>5</option><option>6</option>
+            <option>7</option><option>8</option>                               
+        </select>
+<!-- occasion -->
+        <label for="occasion" 
+            class="form-container-label"> 
+            Occasion: 
+        </label> 
+        <select id="occasion" required="" class="form-container-input">
+            <option>None</option>
+            <option>Indoors</option>
+            <option>Otdoors(Patio)</option>
+            <option>Otdoors(Sidewalk)</option>                                          
+        </select>
+    <!-- seating preferences -->
+        <label for="preferences" 
+            class="form-container-label"> 
+            Seating preferences: 
+        </label> 
+        <select id="preferences" required="" class="form-container-input">
+            <option>None</option>
+            <option>Birthday</option>
+            <option>Anniversary</option>
+            <option>Engagement</option>
+            <option>Other</option>                                          
+        </select>
+    <!-- additional comment -->
+        <label for="comment" 
+            class="form-container-label"> 
+            Additional Comments: 
+        </label> 
+        <textarea class="form-container-input" name="comments" id="comments" cols="40" rows="5"
+        placeholder="Add your comments(optional)"></textarea>     
+
+    <button type="submit" 
+            class="form-container-button"> 
+            Book Now 
+        </button> 
+</form> 
+</div>     
+    </main>
+     <!-- footer -->
+     <footer>
+        <div>
+            <a href="index.html"><img src="images/footer_logo.png" alt="Logo"></a>
+        </div><div><p> &copy; Copyright Little Lemon</p>            
+        </div> 
+    </footer>
+     <!-- script functions -->
+    <script src="js/script.js"></script>
+</body>
+</html>
